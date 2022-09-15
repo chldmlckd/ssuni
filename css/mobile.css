@@ -114,8 +114,7 @@ article img{
 }
 .con{
   margin:0px auto;
-  width:100%;
-  max-width:500px;
+  max-width:414px;
   display:grid;
   padding:0px 1%;
   box-sizing: border-box;
