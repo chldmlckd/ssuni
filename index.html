@@ -11,17 +11,26 @@
   <link href="./css/base.css" rel="stylesheet" type="text/css">
   <!-- 3. 모바일 화면서식 -->
   <link href="./css/mobile.css" rel="stylesheet" type="text/css">
-  <!-- (1) 플렉스 슬라이드 서식 -->
+  <!-- 4. pc화면서식 -->
+  <link href="./css/pc.css" rel="stylesheet" type="text/css">
+
+  <!-- 플렉스 슬라이드 서식 -->
   <link href="./css/flexslider.css" rel="stylesheet" type="text/css">
+  
   <!-- 아이콘폰트 주소 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <!-- 벤더프리픽스 -->
   <script src="./script/prefixfree.min.js"></script>
-  <!-- (2) 제이뤄리 소스  --> <!-- 순서를 지키자 -->
+
+  <!-- 제이쿼리 소스 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <!-- (3) 플렉스 슬라이드 제이쿼리 소스 -->
+
+  <!-- 플렉스 슬라이드 제이쿼리 소스 -->
   <script src="./script/jquery.flexslider.js"></script>
+  <!-- pc 화면 서식 -->
+  <link href="./css/pc.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
   <input type="checkbox" id="toggle">
@@ -45,7 +54,7 @@
           <li><a href="login.html" title="로그인">login</a></li>
           <li><a href="admin.html" title="관리자">admin</a></li>
           <li>
-            <input type="search" id="sh">
+            <input type="search" id="sh" placeholder="검색어입력">
             <label for="sh"> <i class="fas fa-search"></i></label>
           </li>
         </ul>
@@ -54,7 +63,8 @@
       <!-- 모바일용 햄버거 메뉴와 검색아이콘 -->
       <label for="toggle" class="toggle_btn"><i class="fas fa-bars"></i></label>
 
-      <i class="fas fa-search"></i>
+      <i class="fas fa-search s1"></i>
+    </div>
 
       <!-- 메인메뉴 -->
       <nav class="gnb">
@@ -100,7 +110,6 @@
           </li>
         </ul>
       </nav>
-    </div>
   </header>
 
   <!-- 메인콘텐츠 시작 -->
@@ -110,35 +119,20 @@
       <!-- 모바일 화면일때 나오는 슬라이드 -->
       <div class="flexslider mslide">
         <ul class="slides">
-          <li>
-            <a href="#" title="이벤트1"><img src="./images/m_main01.jpg" alt="메인01"></a>
-          </li>
-          <li>
-            <a href="#" title="이벤트2"><img src="./images/m_main02.jpg" alt="메인02"></a>
-          </li>
-          <li>
-            <a href="#" title="이벤트3"><img src="./images/m_main03.jpg" alt="메인03"></a>
-          </li>
-          <li>
-            <a href="#" title="이벤트4"><img src="./images/m_main04.jpg" alt="메인04"></a>
-          </li>
+          <li><a href="#" title="이벤트1"><img src="./images/m_main01.jpg" alt="메인01"></a></li>
+          <li><a href="#" title="이벤트2"><img src="./images/m_main02.jpg" alt="메인02"></a></li>
+          <li><a href="#" title="이벤트3"><img src="./images/m_main03.jpg" alt="메인03"></a></li>
+          <li><a href="#" title="이벤트4"><img src="./images/m_main04.jpg" alt="메인04"></a></li>
         </ul>
       </div>
+
       <!-- pc, tablet 화면일때 나오는 슬라이드 -->
       <div class="flexslider pcslide">
         <ul class="slides">
-          <li>
-            <a href="#" title="이벤트1"><img src="./images/main01.jpg" alt="메인01"></a>
-          </li>
-          <li>
-            <a href="#" title="이벤트2"><img src="./images/main02.jpg" alt="메인02"></a>
-          </li>
-          <li>
-            <a href="#" title="이벤트3"><img src="./images/main03.jpg" alt="메인03"></a>
-          </li>
-          <li>
-            <a href="#" title="이벤트4"><img src="./images/main04.jpg" alt="메인04"></a>
-          </li>
+          <li><a href="#" title="이벤트1"><img src="./images/main01.jpg" alt="메인01"></a></li>
+          <li><a href="#" title="이벤트2"><img src="./images/main02.jpg" alt="메인02"></a></li>
+          <li><a href="#" title="이벤트3"><img src="./images/main03.jpg" alt="메인03"></a></li>
+          <li><a href="#" title="이벤트4"><img src="./images/main04.jpg" alt="메인04"></a></li>
         </ul>
       </div>
     </article>
@@ -170,14 +164,13 @@
       <article class="notice">
         <h2>Notice<i class="fas fa-plus"></i></h2>
         <ul>
-          <li><a href="#" title="오픈예정점">[오픈예정점] 디저트카페 쑤니 서울 강남점, 화성갈그니까~~~~~~~~~ </a></li>
-          <li><a href="#" title="프로모션">[프로모션]&#39;달롤달롤해&#39; 디저트 세트 3종 할인 이벤트</a></li>
-          <li><a href="#" title="프로모션">[프로모션]핫한 여름을 나는 달콤한 방법! 슈니케이크 사지마세요!!!!</a></li>
-          <li><a href="#" title="프로모션">[프로모션]디저트카페 쑤니 강남구청역점 파격할 사람 여기여기 모여라</a></li>
-          
+          <li><a href="a.html" title="내용">쑤니 서현점, 로맨틱 가을을 위한 로즈라떼를 제공합니다.제공합니다.제공합니다.제공합니다.제공합니다.</a></li>
+          <li><a href="a.html" title="내용">카카오 선물하기에서 쑤니를 찾아보세요. 행운이 있습니다.제공합니다.제공합니다.제공합니다.제공합니다.</a></li>
+          <li><a href="a.html" title="내용">종이 쿠폰 없이 편하게 적립하자! 스탬프팡을 하세요.</a></li>
+          <li><a href="a.html" title="내용">[오픈예정점] 디저트카페 쑤니 서울 강남점 오픈을 축하합니다.</a></li>
         </ul>
       </article>
-      
+
       <article class="store">
         <h2>매장안내</h2>
         <a href="#" title="매장안내">신규매장안내</a>
@@ -186,13 +179,10 @@
       <article class="news">
         <h2>News<i class="fas fa-plus"></i></h2>
         <ul>
-          <li><a href="#" title="Next Daily">[Next Daily]JH그룹 '쑤니', 오픈 1주년 기념 이벤트가 없어 지금 당장 꺼져</a></li>
-        
-          <li><a href="#" title="이투데이">[이투데이]프리미엄 디저트카페 쑤니, KPGA 선수 계약 해제 통보 [논란]</a></li>
-        
-          <li><a href="#" title="매일경제">[매일경제]쑤니, 오는 8월까지 빙수,디저트,아침메이플 스토리 메이플 스토리</a></li>
-       
-          <li><a href="#" title="머니S">[머니S]12회 대구,경북 프랜차이즈 창업박람회 개미는 뜬뜬 오늘도 뜬뜬 열실히 일을 하네 뜬뜬</a></li>
+          <li><a href="a.html" title="내용">[IT동아] 디저트카페 쑤니, 카카오톡 선물하기에서 사용할 수 있습니다.</a></li>
+          <li><a href="a.html" title="내용">[Next Daily]JH그룹 "쑤니", 오픈을 축하합니다.</a></li>
+          <li><a href="a.html" title="내용">[이투데이]프리미엄 디저트카페 쑤니, KPGA결재서비스 추가</a></li>
+          <li><a href="a.html" title="내용">[매일경제] 쑤니, 오는 8월까지 빙수,디저트카페에서 서비스 합니다.제공합니다.제공합니다.제공합니다.제공합니다.제공합니다.제공합니다.제공합니다.제공합니다.제공합니다.제공합니다.제공합니다.제공합니다.</a></li>
         </ul>
       </article>
     </section>    
@@ -200,48 +190,42 @@
 
   <!-- 푸터영역 시작 -->
   <footer>
-    <nav class="f_lnb">
-      <ul>
-        <li>
-          <a href="#" title="회사소개">회사소개 / 오시는길</a>
-        </li>
-        <li>
-          <a href="#" title="가맹안내">가맹안내</a>
-        </li>
-        <li>
-          <a href="#" title="가맹문의">가맹문의 : 080-0000-0000</a>
-        </li>
-        <li>
-          <a href="#" title="일반문의">일반문의 : 080-0000-0000</a>
-        </li>
-        <li>
-          <a href="#" title="홍보">홍보, 마케팅 문의 : 080-0000-0000</a>
-        </li>
-      </ul>
-    </nav>
-    <nav class="sns">
-      <ul>
-        <li><a href="#" title="카카오스토리"><img src="./images/foot_sns01.png" alt="카카오스토리"></a></li>
-        <li><a href="#" title="페이스북"><img src="./images/foot_sns02.png" alt="페이스북"></a></li>
-        <li><a href="#" title="트위터"><img src="./images/foot_sns03.png" alt="트위터"></a></li>
-        <li><a href="#" title="인스타그램"><img src="./images/foot_sns04.png" alt="인스타그램"></a></li>
-        <li><a href="#" title="블로거"><img src="./images/foot_sns05.png" alt="블로거"></a></li>
-      </ul>
-    </nav>
-    <address>
-      <p>(주)치어스 &amp; 경기도 분당구 성남대로 000번길 0-00 모선빌딩 0층</p>
-      <p>법인등록번호 00000-00000Copyright&copy;2021 ssunikorea All rights reserved.</p>
-    </address>
+    <div class="fo">
+      <nav class="f_lnb">
+        <ul>
+          <li><a href="a.html" title="회사소개">회사소개 / 오시는길</a></li>
+          <li><a href="a.html" title="가맹안내">가맹안내</a></li>
+          <li><a href="tel:080-0000-0000" title="가맹문의">가맹문의 : 080-0000-0000</a></li>
+          <li><a href="tel:080-0000-0000" title="일반문의">일반문의 : 080-0000-0000</a></li>
+          <li><a href="tel:080-0000-0000" title="홍보">홍보, 마케팅 문의 : 080-0000-0000</a></li>
+        </ul>
+      </nav>
+
+      <nav class="sns">
+        <ul>
+          <li><a href="s.html" title="카카오스토리"><img src="./images/foot_sns01.png" alt="카카오스토리 이미지"></a></li>
+          <li><a href="f.html" title="페이스북"><img src="./images/foot_sns02.png" alt="페이스북 이미지"></a></li>
+          <li><a href="t.html" title="트위터"><img src="./images/foot_sns03.png" alt="트위터 이미지"></a></li>
+          <li><a href="i.html" title="인스타그램"><img src="./images/foot_sns04.png" alt="인스타그램"></a></li>
+          <li><a href="b.html" title="블로그"><img src="./images/foot_sns05.png" alt="블로그"></a></li>
+        </ul>
+      </nav>
+      <address>
+        <p>(주)치어스 &amp; 경기도 분당구 성남대로 000번길 0-00 모선빌딩 0층</p>
+        <p>법인등록번호 00000-00000Copyright&copy;2021 ssunikorea All rights reserved.</p>
+      </address>
+    </div>
   </footer>
 
   <script>
-  // Can also be used with $(document).ready()
+    // Can also be used with $(document).ready()
     $(window).load(function() {
       $('.flexslider').flexslider({
-        animation: "slide" 
+        animation: "slide"
         // animation: "fade"
       });
     });
   </script>
+
 </body>
 </html>
